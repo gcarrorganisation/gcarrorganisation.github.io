@@ -1,11 +1,25 @@
 <<!DOCTYPE html>
 <html>
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
 <style>
 div {
 	height: 200px;
 	background-size: cover;
 	position: relative;
 	margin: 40px 0 0 0;
+}
+.column {
+    float: left;
+    width: 50%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 p {
 	color: rgba(255,255,255,1);
@@ -38,17 +52,15 @@ p {
 <body>
 
 <h1>Portfolio</h1>
-
-<div class="david"> 
+<input type="email" placeholder="your email">
+<div class="row"
+	<div class="column">
 	<p> David and the Bathsheba </p>
-</div>
-<div class="const">
-	<p style="background-image: constellatory.jpg"> This is text for Constellatory </p> 
-</div>
-<div class="dand"> 
+	<p style="background-image: constellatory.jpg"> Constellatory </p> 
+	</div>
+<div class="row">
 	<p> Dandelion </p>
-</div>
-<div class="Music"> 
+	<div class="column">
 	<p> Music </p>
 </div>
 <div class="promo"> 
