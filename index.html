@@ -3,46 +3,41 @@
 <style>
 div {
 	height: 200px;
-	background-size: cover;
+	background-image: cover;
 	position: relative;
-	margin: 40px 0 0 0;
+	margin: 20px 0 0 0;
 }
 .column {
-    float: left;
-    width: 50%;
+	float: left;
+	width: 50%;
 }
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 p {
 	color: rgba(255,255,255,1);
-    background-color: green;
-    line-height: 28px;
-    position: absolute;
-    bottom: 0;
-    border: 5px solid black;
-    padding: 50px;
-    margin: 20px;
+	background-color: #B7CBFF;
+	background-size: cover;
+	line-height: 28px;
+	text-align: center;
+	
+	bottom: 0;
+	border: 2px solid black;
+	padding: 70px;
+	margin: 0px;
 }
-.david {
-	background: #00FFFF;
+a {
+	color: white;
+	text-decoration: none;
 }
-.const {
-	background-image: constellatory.jpg;
-}
-.dand {
-	background-image: dandelion.jpg;
-}
-.music {
-	background-image: spectres.png;
-}
-.promo {
-	background-image: jerusalem.png;
+a:hover {
+	color: #2a5866;
+   text-decoration:none;
 }
 body {
-	background-color: white;
+	background-color: #24272F;
 }
 </style>
 <head>
@@ -50,22 +45,25 @@ body {
 	
 </head>
 <body>
-<title>Gabriella Carr</title>
-<h1>Portfolio</h1>
-<p> If you would like to get in touch, please enter your email below </p>
-<input type="email" placeholder="your email"> <input type="submit">
-<div class="row"
-	<div class="column">
-	<p> David and the Bathsheba </p>
-	<p style="background-image: constellatory.jpg"> Constellatory </p> 
+	<h1 style="color: white;">Gabriella Carr <i>filmmaker</i></h1>
+	<p> University of Bristol film student <strong> gc15177@my.bristol.ac.uk </strong> Bristol, London </p>
+	<iframe width="100%" height="400" src="https://www.youtube.com/embed/4Se5l5gfVq4">
+	</iframe>
+	<div class="row">
+		<div class="column">
+			<p style="background-image: url(...)"> <a href="https://youtu.be/0PsPBcX8TqI" > Documentary </a></p>
+		</div>			
+		<div class="column">
+			<p style="background-image: url('constellatory.jpg')"> <a href="https://youtu.be/4Se5l5gfVq4" > Animation/ Art </a></p> 
+		</div>
 	</div>
-<div class="row">
-	<p> Dandelion </p>
-	<div class="column">
-	<p> Music </p>
-</div>
-<div class="promo"> 
-	<p> Promotional Trailers </p>
-</div>
+	<div class="row">
+		<div class="column">
+		<p style="background-image: url('David.jpg')"> <a href="https://youtu.be/g1pQSnrOw6E"> Drama </a> </p>
+		</div>
+		<div class="column">
+			<p style="background-image: url('spectres.png')"> <a href="https://youtu.be/DdnyR_OvmBg" > Promotional Trailers </a> </p>
+		</div>
+	</div>
 </body>
 </html>
