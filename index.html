@@ -6,16 +6,11 @@
 	<!---Google Fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Arapey|Archivo+Narrow|Cardo|Economica|Julius+Sans+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans&effect=anaglyph" rel="stylesheet">
+	<!-- Icon Library -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 
-h1 {
-	font-family: 'PT Sans', sans-serif;
-	font-style: anaglyph;
-}
-
-div {
-
-}
 p {
 	color: rgba(255,255,255,1);
 	line-height: 0px;
@@ -35,32 +30,47 @@ a {
 }
 a:hover {
 
-	color: #094F6E;
+	color: black;
     text-decoration:none;
 }
 body {
-	background-image: url('constellatory.jpg');
-	background-size: no-repeat;
+	background-image: url("constellatory.jpg");
 }
 h1 {
 	color: white;
 	font-family: 'Economica', sans-serif;
 	padding: 15px 10px 15px 50px;
 	margin: 5px;
+	font-style: anaglyph;
 }
 .Button{
 	margin-left: 50px;
 	font-family:'Economica', sans-serif, bold;
 }
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.socials {
+	padding: 70px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    border-radius:50%;
+}
 	</style>
 </head>
 <body>
-	<h1>Gabriella Carr <i>filmmaker</i></h1>
+	<div>
+		<h1> <a href="index.html">Gabriella Carr</a> <i>filmmaker</i></h1> 
+	</div>
 	<div class="Button">
 		<button type="button" class="btn btn-primary">My Portfolio</button>
 	</div>
 	<div>
-		<p> <a href="https://youtu.be/4Se5l5gfVq4"> Bio </a></p>
+		<p> <a href="bio.html"> Bio &#9666;</a></p>
 	</div>
 	<div>
 		<p> <a href="https://youtu.be/4Se5l5gfVq4"> Animation </a></p>		
@@ -76,6 +86,9 @@ h1 {
 	</div>
 	<div>
 		<p> <a href="https://youtu.be/4Se5l5gfVq4"> Contact</a></p>
+	</div>
+	<div class="socials">
+		<a href="#" class="fa fa-youtube"></a> <a href="#" class="fa fa-flickr"></a><a href="#" class="fa fa-linkedin"></a>
 	</div>
 </body>
 </html>
