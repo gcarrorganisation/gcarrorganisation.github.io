@@ -1,107 +1,107 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<!---Bootstrap-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<!---Google Fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Arapey|Archivo+Narrow|Cardo|Economica|Julius+Sans+One" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans&effect=anaglyph" rel="stylesheet">
-	<!-- Icon Library -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Arapey|Archivo+Narrow|Cardo|Economica|Julius+Sans+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&effect=anaglyph" rel="stylesheet">
+  <!-- Icon Library -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-row img:hover{opacity: 0.5}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
 
-p {
-	color: rgba(255,255,255,1);
-	line-height: 0px;
-	text-align: left;
-	bottom: 0;
-	padding: 0px 0px 0px 50px;
-	margin: 5px;
-	font-family: 'Economica', sans-serif, bold;
-	font-size: 20px;
-	background-size: 0px;
-	line-height: 30px;
-    opacity: 1.0;
-}
-a {
-	color: white;
-	text-decoration: none;
-}
-a:hover {
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>SOME<br>NAME</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a> 
+  <a href="bio.html" onclick="w3_close()" class="w3-bar-item w3-button">BIO</a> 
+  <a href="anim.html" onclick="w3_close()" class="w3-bar-item w3-button">ANIMATION</a>
+  <a href="doc.html" onclick="w3_close()" class="w3-bar-item w3-button">DOCUMENTARY</a>
+  <a href="dram.html" onclick="w3_close()" class="w3-bar-item w3-button">DRAMA</a>
+  <a href="art.html" onclick="w3_close()" class="w3-bar-item w3-button">ART</a>
+  <a href="contact.html"onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
 
-	color: grey;
-    text-decoration:none;
-}
-body {
-	background-image: url("constellatory.jpg");
-}
-h1 {
-	color: white;
-	font-family: 'Economica', sans-serif;
-	padding: 15px 10px 15px 50px;
-	margin: 5px;
-	font-style: anaglyph;
-}
-.Button{
-	margin-left: 50px;
-	font-family:'Economica', sans-serif, bold;
-}
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-.socials {
-	padding: 70px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    display: inline;
-    border-radius:50%;
-}
-.opaque-black{
-	background-color: black;
-	opacity: 0.8;
-	padding: 10px;
-}
-	</style>
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">Gabriella Carr</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
 
-</head>
-<body>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-	<div>
-		<h1> <a href="index.html">Gabriella Carr</a> <i>filmmaker</i></h1> 
-	</div>
-		<div class="col-md-2 opaque-black">
-	<div class="Button">
-		<button type="button" class="btn btn-primary">My Portfolio</button>
-	</div>
-	<div>
-		<p> <a href="bio.html"> Bio &#9666;</a></p>
-	</div>
-	<div>
-		<p> <a href="https://youtu.be/4Se5l5gfVq4"> Animation </a></p>		
-	</div>
-	<div>
-		<p> <a href="https://youtu.be/4Se5l5gfVq4"> Documentary </a></p> 
-	</div>
-	<div>
-		<p> <a href="https://youtu.be/4Se5l5gfVq4"> Fiction </a></p>
-	</div>
-	<div>
-		<p> <a href="https://youtu.be/4Se5l5gfVq4"> Current Projects</a></p>
-	</div>
-	<div>
-		<p> <a href="https://youtu.be/4Se5l5gfVq4"> Contact</a></p>
-	</div>
-	<div class="socials">
-		<a href="#" class="fa fa-youtube"></a> <a href="#" class="fa fa-flickr"></a><a href="#" class="fa fa-linkedin"></a>
-	</div>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <img src="spectres.png" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="jerusalem.png" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="/w3images/girl_mountain.jpg" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="">
+    </div>
+
+    <div class="w3-third">
+      <img src="david.jpg" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="">
+    </div>
+    
+    <div class="w3-third">
+      <img src="constellatory.jpg" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="dandelion.png" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="/w3images/closegirl.jpg" style="width:100%" onclick="onClick(this)" alt="">
+    </div>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+<!-- End page content -->
 </div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
 </body>
-	<script
-	  src="http://code.jquery.com/jquery-3.2.1.js"
-	  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="></script>
-	 <script src="/  .js"> </script>
 </html>
