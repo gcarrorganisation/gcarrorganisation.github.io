@@ -30,6 +30,23 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   padding-bottom:20px;
   text-align:center;
 }
+a {
+  color: black;
+    text-decoration: none;
+}
+a:hover{
+  color: white;
+  text-decoration: none;]
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
 </style>
 <body  style="max-width:1600px">
 
@@ -52,9 +69,9 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<div class="w3-overlay w3-hide-large w3-animate-opacity"  style="cursor:pointer" onclick="w3_close()" title="close side menu" id="myOverlay"></div>
 
-<div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+<div class="w3-container w3-center w3-text-light-grey w3-padding-32" id="about" style="background-color: #678E9F">
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:300px">
 
@@ -65,12 +82,22 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <div class="w3-row">
   <h2 style="padding-top: 70px"> CONTACT </h2>
   <p class="p2"> If you would like to get in contact with me for business reasons, or just like to comment on my work or website, please fill in the Google Form below</p>
+<!--Social Buttons-->
+  <p>
+    <a href="https://www.linkedin.com/in/gabriella-carr-36233011b/" class="fa fa-linkedin"></a>
+    <a href="https://vimeo.com/gcarr" class="fa fa-vimeo"></a>
+    <a href="https://www.flickr.com/photos/gabriella_j_carr/" class="fa fa-flickr"></a>
+    <a href="https://www.youtube.com/playlist?list=PLHHy3Ev6P1EDpiB8UjSrpLks99HlcQvf4" class="fa fa-youtube"></a>
+    <a href="https://www.instagram.com/gabriellajcarr/" class="fa fa-instagram"></a>
+  </p>
+<!--Google Form-->
  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScOfc4UjCCOS1I3S-Mz0izxDqXD-hMnaRJhHUOirgpy0yQb5g/viewform?embedded=true" width="760" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
   <p class="p2"> Thank You!</p> 
   </div>
   <div style="padding: 50px"> </div>
  
- <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+<!--Link to Template-->
+  <div class="w3-grey w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
 </div>
 <!-- End page content -->
 
