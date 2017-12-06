@@ -17,53 +17,32 @@
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 .w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
 .w3-row img:hover{opacity: 0.5}
-.fa {
-  padding: 20px;
-  font-size: 20px;
-  width: 20px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 5px;
-  border-radius: 50%;
-  color; black; 
+.p1 {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  text-align:justify;
 }
-.fa:hover {
-    opacity: 0.7;
-}
-.fa-linkedin {
-  background:  black;
-  color: white;
-}
-.fa-youtube {
-  background: black;
-  color: white;
-}
-
-.fa-instagram {
-  background: black;
-  color: white;
-}
-.fa-vimeo {
-  background: black;
-  color: white;
-}
-.fa-flickr {
-  background: black;
-  color: white;
+.p2 {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
+  padding-bottom:20px;
+  text-align:center;
 }
 </style>
-<body class="w3-light-grey w3-content" style="max-width:1600px">
+<body  style="max-width:1600px">
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-white w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-  <h3 class="w3-padding-64 w3-center"><b>SOME<br>NAME</b></h3>
+  <h3 style="padding-top: 130px"><b>GABRIELLA<br>CARR</b></h3>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a> 
-  <a href="bio.html" onclick="w3_close()" class="w3-bar-item w3-button">BIO &#9666;</a> 
+  <a href="bio.html" onclick="w3_close()" class="w3-bar-item w3-button">BIO </a> 
   <a href="anim.html" onclick="w3_close()" class="w3-bar-item w3-button">ANIMATION</a>
   <a href="doc.html" onclick="w3_close()" class="w3-bar-item w3-button">DOCUMENTARY</a>
   <a href="dram.html" onclick="w3_close()" class="w3-bar-item w3-button">DRAMA</a>
   <a href="art.html" onclick="w3_close()" class="w3-bar-item w3-button">ART</a>
-  <a href="contact.html"onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="contact.html"onclick="w3_close()" class="w3-bar-item w3-button">CONTACT &#9666;</a>
 </nav>
 
 <!-- Top menu on small screens -->
@@ -75,26 +54,27 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
+<div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:300px">
 
   <!-- Push down content on small screens --> 
   <div class="w3-hide-large" style="margin-top:83px"></div>
   
-  <h1 style= "padding-top: 90px; padding-left: 20px"> Bio </h1>
-  <div style= "padding: 20px">
-  	<p>text </p> 
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-linkedin"></a>
-    <a href="#" class="fa fa-youtube"></a>
-    <a href="#" class="fa fa-instagram"></a>
-    <a href="#" class="fa fa-vimeo"></a>
+   <!-- About Me Info -->
+  <div class="w3-row">
+  <h2 style="padding-top: 70px"> CONTACT </h2>
+  <p class="p2"> If you would like to get in contact with me for business reasons, or just like to comment on my work or website, please fill in the Google Form below</p>
+ <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScOfc4UjCCOS1I3S-Mz0izxDqXD-hMnaRJhHUOirgpy0yQb5g/viewform?embedded=true" width="760" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+  <p class="p2"> Thank You!</p> 
   </div>
+  <div style="padding: 50px"> </div>
  
-
-
-<!-- End page content -->
+ <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
 </div>
+<!-- End page content -->
+
+
 
 <script>
 // Script to open and close sidebar
